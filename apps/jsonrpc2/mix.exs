@@ -50,7 +50,7 @@ defmodule JSONRPC2.Mixfile do
       # testing and other stuff
       {:credo, "~> 1.0.0-rc1", only: [:dev, :test], runtime: false},
       {:dialyxir, "~> 1.0.0-rc.4", only: [:dev, :test], runtime: false},
-      {:hackney, "~> 1.6", only: [:test]},
+      {:hackney, "~> 1.15.2", only: [:test]},
       {:websockex,
        git: "https://github.com/mana-ethereum/websockex.git", branch: "master", only: [:test]},
       {:ex_doc, "~> 0.19", only: :dev, runtime: false}
