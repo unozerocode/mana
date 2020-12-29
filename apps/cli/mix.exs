@@ -36,7 +36,7 @@ defmodule Cli.MixProject do
       {:merkle_patricia_tree, in_umbrella: true},
 
       # External deps
-      {:ethereumex, "~> 0.5.1"},
+      {:ethereumex, github: "unozerocode/ethereumex"},
       {:progress_bar, "~> 1.7.0"},
       {:logger_file_backend, "~> 0.0.10"}
     ]
