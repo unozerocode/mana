@@ -38,7 +38,7 @@ defmodule Mana.MixProject do
       {:ex_rlp, "~> 0.5.2"},
       {:ex_doc, "~> 0.19", only: :dev, runtime: false},
       {:dialyxir, "~> 1.0.0-rc.4", only: [:dev, :test], runtime: false},
-      {:ethereumex, "~> 0.5.1"},
+      {:ethereumex, github: "unozerocode/ethereumex"},
       {:jason, "~> 1.1"},
       {:credo, "~> 1.0.0-rc1", only: [:dev, :test], runtime: false},
       {:distillery, "~> 2.0", runtime: false},
