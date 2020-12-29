@@ -55,7 +55,9 @@ defmodule CLI.BlockProvider.RPC do
         #%{"code" => -32005, "data" => %{"rate" => %{"allowed_rps" => 50, "backoff_seconds" => 30, "current_rps" => 50.86666666666667}, "see" => "https://infura.io/docs/ethereum/json-rpc/ratelimits"}, "message" => "project ID request rate exceeded"}, "id" => 1760, "jsonrpc" => "2.0"}
         backoff = 30
         if retries > 0 do
+          Logger.info("Backing off, sleeping for #{backoff} seconds")
           Process.sleep(backoff * 1000)
+          Logger.info("Done sleeping")
           :ok = Logger.info("Error loading block number, retrying: #{inspect(error)}")
           get_block_number(client, retries - 1)
         else
