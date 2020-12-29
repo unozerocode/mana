@@ -162,6 +162,9 @@ defmodule CLI.BlockProvider.RPC do
       {:error, error} ->
         if retries > 0 do
           :ok = Logger.info("Error loading block, retrying: #{inspect(error)}")
+          Logger.info("Sleeping 30 sec")
+          Process.sleep(30000)
+          Logger.info("Sleep done")
           load_new_block(number, client, retries - 1)
         else
           {:error, error}
