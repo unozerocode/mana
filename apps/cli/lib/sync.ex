@@ -1,4 +1,4 @@
-defmodule CLI.Sync do
+  defmodule CLI.Sync do
   @moduledoc """
   Tools to sync new blocks.
   """

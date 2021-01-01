@@ -1,0 +1,1 @@
+mix sync --chain ropsten --provider-url https://ropsten.infura.io/v3/e8ce0686f4e84c44ba1d3c88bb824f22
