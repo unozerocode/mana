@@ -1,2 +1,2 @@
 . $HOME/.asdf/asdf.sh
-mix sync --chain ropsten --provider-url $ETHEREUM_PROVIDER_URL
+/home/azureuser/.asdf/shims/mix sync --chain ropsten --provider-url $ETHEREUM_PROVIDER_URL
