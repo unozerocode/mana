@@ -12,7 +12,7 @@ defmodule Blockchain.Blocktree do
   alias Blockchain.Genesis
   alias MerklePatriciaTree.TrieStorage
   require Logger
-  
+
   defstruct best_block: nil
 
   @type t :: %__MODULE__{best_block: Block.t() | nil}
@@ -111,6 +111,6 @@ defmodule Blockchain.Blocktree do
   end
 
   def commit(args) do
-    Logger.info("FAKE COMMIT")
+    Logger.info("FAKE COMMIT with #{args}")
   end
 end
