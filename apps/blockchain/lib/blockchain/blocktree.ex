@@ -110,7 +110,7 @@ defmodule Blockchain.Blocktree do
     end
   end
 
-  def commit(args) do
+  def commit!(args) do
     Logger.info("FAKE COMMIT with #{args}")
   end
 end
