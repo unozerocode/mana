@@ -108,4 +108,8 @@ defmodule Blockchain.Blocktree do
       {:ok, {block, trie_with_block}}
     end
   end
+
+  def commit(args) do
+    Logger.info("FAKE COMMIT")
+  end
 end
