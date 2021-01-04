@@ -37,4 +37,8 @@ defmodule Blockchain.Blocktree.State do
 
     :ok
   end
+
+  def commit(args) do
+    Logger.info("FAKE COMMIT")
+  end
 end
