@@ -11,7 +11,8 @@ defmodule Blockchain.Blocktree do
   alias Blockchain.Chain
   alias Blockchain.Genesis
   alias MerklePatriciaTree.TrieStorage
-
+  require Logger
+  
   defstruct best_block: nil
 
   @type t :: %__MODULE__{best_block: Block.t() | nil}
