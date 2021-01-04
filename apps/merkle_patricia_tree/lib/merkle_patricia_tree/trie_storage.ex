@@ -7,6 +7,8 @@ defmodule MerklePatriciaTree.TrieStorage do
   alias MerklePatriciaTree.Trie
   alias MerklePatriciaTree.Trie.Node
 
+  require Logger
+
   @type t :: struct()
 
   @callback with_new_cache(t) :: t
@@ -117,6 +119,8 @@ defmodule MerklePatriciaTree.TrieStorage do
 
   @spec permanent_db(t) :: DB.db()
   def permanent_db(implementation) do
+    Logger.info("PERMANENT_DB")
+    IO.inspect(implementation)
     storage(implementation).permanent_db(implementation)
   end
 
