@@ -47,7 +47,7 @@ defmodule Blockchain.Blocktree do
       case Block.get_parent_block(block, trie) do
         :genesis -> nil
         {:ok, parent} -> parent
-        :nonot_found -> :parent_not_found
+        :not_found -> :parent_not_found
       end
 
     validation =
